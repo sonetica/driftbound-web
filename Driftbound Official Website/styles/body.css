@@ -1,0 +1,7 @@
+body {
+    position: relative;
+    height: 500vh;
+    background-color: rgba(1, 10, 19, 0.2) 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}

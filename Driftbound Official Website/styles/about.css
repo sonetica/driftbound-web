@@ -1,0 +1,45 @@
+.about__section {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 5.5rem;
+    height: 31.5rem;
+    z-index: 800;
+}
+
+.about__title {
+    z-index: 1000;
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    color: white;
+    font-family: "Aoboshi One", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 90px;
+}
+
+.about__explanation {
+    z-index: 1000;
+    display: flex;
+    margin: auto;
+    width: 60rem;
+    line-height: 2rem;
+    justify-content: center;
+    color: white;
+    font-family: "Aoboshi One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

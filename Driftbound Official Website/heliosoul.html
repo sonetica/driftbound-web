@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  :root {
+    --primary: #0ac8b9;
+    --secondary: #aefcf4;
+    --accent: #f0e6d2;
+    --dark: #111418;
+    --darker: #010a13;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--darker);
+    color: var(--accent);
+    overflow-x: hidden;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(180deg, rgba(1, 10, 19, 0.85) 0%, rgba(1, 10, 19, 0.7) 60%, transparent 100%);
+  }
+
+  .btn-primary {
+    background: var(--primary);
+    color: var(--darker);
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(10, 200, 185, 0.7);
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background: var(--secondary);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(10, 200, 185, 0.9);
+  }
+
+  h1, h2, h3 {
+    text-shadow: 0 0 15px rgba(10, 200, 185, 0.4);
+  }
+
+  .glass-bg {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(10, 200, 185, 0.15);
+  }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/heroes.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/news.css">
+    <link rel="icon" type="image/png" href="images/db-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+    <title>Beranda - Driftbound</title>
+</head>
+
+<body>
+    <header class="header__bar">
+        <section class="header__left">
+            <div class="db__logo">
+                <img src="images/db-logo.png" alt="Driftbound Logo" class="logo">
+            </div>
+            <div class="game__button">GAME</div>
+            <div class="berita__button">BERITA</div>
+            <div class="merch__button">MERCH</div>
+            <div class="support__button">SUPPORT</div>
+        </section>
+        <section class="header__right">
+            <div class="play__button">BUY NOW</div>
+            <div class="search__icon">
+                <ion-icon name="search-circle"></ion-icon>
+            </div>
+        </section>
+    </header>
+
+    <section class="hero__section">
+        <video width="100%" height="100%" object-fit="cover" z-index="2" autoplay muted controls loop plays-inline class="video__hero">
+            <source src="video/hero-video.mp4" type="video/mp4">
+        </video>
+        <!-- ✅ Tambahkan gradasi -->
+        <div class="hero-gradient"></div>
+        <div class="video__overlay"></div>
+        <div class="hero__title">
+            <img src="images/db-lettering.png" class="db__lettering__logo" alt="Driftbound Title Logo">
+        </div>
+        <div class="mainkan__outline"></div>
+        <div class="mainkan__button">MAINKAN</div>
+    </section>
+
+    <section class="about__section">
+        <div class="fade-in">
+            <div class="about__title">
+                <div>
+                    APA ITU DRIFTBOUND?
+                </div>
+            </div>
+            <div class="about__explanation">
+                <p>
+                    Driftbound adalah game action-RPG bernuansa gelap yang mengisahkan seorang pejuang yang terlempar ke masa depan, ke dunia yang dikuasai oleh dirinya sendiri. Di masa itu, tiga faksi besar telah disatukan di bawah tirani sang tokoh utama, yang berubah menjadi penguasa kejam akibat dendam masa lalu. Pemain akan menjelajahi dunia ini, mengungkap rahasia di balik kejatuhannya, dan menentukan akhir dari semua yang pernah ia lindungi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news__section">
+        <div class="fade-in">
+            <div class="news__main__title">
+                BERITA TERBARU
+            </div>
+            <div class="news__sector">
+                <div class="news__page1">
+                    <div class="news__image">
+                        <img src="news-images/news-image1.png" alt="News Image 1" class="news-img" style="height: 14.5rem;">
+                    </div>
+                    <div class="news__text__section">
+                        <div class="news__date">
+                            <p>GAME UPDATES</p>
+                            <div class="date__divider"></div>
+                            <p class="date__news">31/07/2025</p>
+                        </div>
+                        <div class="news__title">
+                            <p>Trailer Resmi Driftbound</p>
+                        </div>
+                        <div class="news__text">
+                            <p>Driftbound telah mengeluarkan trailer resminya, menampilkan gameplay dan grafis yang menarik dan menakjubkan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__page2">
+                    <div class="news__image">
+                        <img src="news-images/news-image2.jpg" alt="News Image 1" class="news-img">
+                    </div>
+                    <div class="news__text__section">
+                        <div class="news__date">
+                            <p>GAME UPDATES</p>
+                            <div class="date__divider"></div>
+                            <p class="date__news">26/07/2025</p>
+                        </div>
+                        <div class="news__title">
+                            <p>Teaser Desain Karakter</p>
+                        </div>
+                        <div class="news__text">
+                            <p>Driftbound telah mengeluarkan teaser pertama untuk desain karakter utamanya, berupa sketsa pensil dan berwarna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__page3">
+                    <div class="news__image">
+                        <img src="news-images/news-image3.jpeg" alt="News Image 1" class="news-img" style="height:14.8rem; width: 100%;">
+                    </div>
+                    <div class="news__text__section">
+                        <div class="news__date">
+                            <p>GAME UPDATES</p>
+                            <div class="date__divider"></div>
+                            <p class="date__news">25/07/2025</p>
+                        </div>
+                        <div class="news__title">
+                            <p>Soundtrack Resmi Driftbound</p>
+                        </div>
+                        <div class="news__text">
+                            <p>Dengarkan soundtrack resminya Driftbound yang mengiringi gameplay dengan menciptakan suasana yang imersif.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/heliosoul.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
